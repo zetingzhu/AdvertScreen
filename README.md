@@ -3,9 +3,6 @@
 
  - convenientbanner 屏幕广告浏览展示
  - libaums USB操作框架
- - butterknife 注解框架
- - eventbus 事件订阅框架
- - serialport 串口工具
  - Typeface 设置显示字体
  - 监听应用启动和展示界面
 
@@ -121,19 +118,8 @@ public class MyLocalImageHolderView extends Holder<AdvertInfoBean> {
     compile 'com.github.mjdev:libaums:0.5.5'
 ```
 
-
-
-
-## butterknife 注解框架
-
-## eventbus 事件订阅框架
-
-## serialport 串口工具
-
- 
 ## Typeface 设置显示字体
 将TTF字体格式文件保存到（app/src/main/assets/fonts）目录中
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190304112128130.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podTU3NjU1ODIwMw==,size_16,color_FFFFFF,t_70)
 
 ```javascript
 // 设置文本的显示样式
