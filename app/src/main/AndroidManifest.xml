@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ad.vipcare.com.advertscreen"
+          android:installLocation="internalOnly">
+    <!--  android:installLocation="internalOnly"
+     Android 应用安装到内存中
+     -->
+
+    <!--自启动权限-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--下载权限-->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <!--显示系统状态栏-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!--网络权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--磁盘读写-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission
+        android:name="android.hardware.usb.host"
+        android:required="false"/>
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!--添加安装未知来源应用的权限-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2"/>
+
+        <activity
+            android:name=".ActivityAdvert"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name="ad.vipcare.com.usb.BActivityReadUsb"></activity>
+        <activity android:name="ad.vipcare.com.usb.AUsbTestActivity"></activity>
+
+        <!--自启动广播-->
+        <receiver android:name="ad.vipcare.com.Broadcast.MyBootReceiver"
+                  android:enabled="true"
+                  android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <!--监听usb服务-->
+        <service android:name="ad.vipcare.com.usb.CUsbReadService"></service>
+        <!--时间服务-->
+        <service android:name="ad.vipcare.com.timeUtil.TimeService"></service>
+
+        <!--下载服务-->
+        <service android:name="ad.vipcare.com.download.DownloadServise"></service>
+        <!-- 静默安装应用程序 -->
+        <service
+            android:name="ad.vipcare.com.download.MyAccessibilityService"
+            android:label="广告应用智能安装"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service"/>
+        </service>
+        <!-- 静默安装应用程序 -->
+
+    </application>
+
+</manifest>

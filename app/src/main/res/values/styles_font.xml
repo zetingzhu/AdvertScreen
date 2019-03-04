@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 日期 -->
+    <style name="weatherDataText">
+        <item name="android:textColor">@color/weater_data_text</item>
+        <item name="android:textSize">@dimen/weater_data_text_size</item>
+    </style>
+
+    <!-- 温度 -->
+    <style name="weatherTempText">
+        <item name="android:textColor">@color/weater_data_text</item>
+        <item name="android:textSize">@dimen/weater_temp_text_size</item>
+    </style>
+
+
+    <!-- 温度 -->
+    <style name="weatherStatText">
+        <item name="android:textColor">@color/weater_data_text</item>
+        <item name="android:textSize">@dimen/weater_stat_text_size</item>
+    </style>
+
+</resources>

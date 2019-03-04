@@ -1,0 +1,44 @@
+niutoolsKey.jks ：
+别名：tools
+密码：android
+存储密码：android
+
+
+allendeiMac:dev allen$ keytool -list  -v -keystore niutoolsKey.jks
+输入密钥库口令:  android
+
+密钥库类型: JKS
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: tools
+创建日期: 2018-6-26
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=tools
+发布者: CN=tools
+序列号: 51100428
+有效期开始日期: Tue Jun 26 18:41:13 CST 2018, 截止日期: Thu Jun 02 18:41:13 CST 2118
+证书指纹:
+         MD5: E3:56:31:E4:D0:17:A0:20:86:C3:7B:C7:AC:B0:BE:5C
+         SHA1: 29:95:1D:35:63:20:6D:FC:20:D1:AC:75:B6:1D:C8:A0:3A:54:DA:AF
+         SHA256: 43:9F:FF:EA:1B:39:6D:6E:86:3B:B4:2D:74:F1:63:31:EE:06:53:BA:51:4F:79:C2:9E:7E:6D:EC:6B:1A:57:14
+         签名算法名称: SHA256withRSA
+         版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: CF 49 6B 7E F4 15 F3 14   45 45 91 65 0D CA EA 0F  .Ik.....EE.e....
+0010: C8 9C 61 89                                        ..a.
+]
+]
+
+
+
+*******************************************
+*******************************************

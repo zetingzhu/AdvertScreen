@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="weater_data_text">#ffffff</color>
+
+    <!--断开状态背景-->
+    <color name="port_bg">#373737</color>
+
+    <!--文字-->
+    <color name="port_text_stat">#373737</color>
+    <color name="port_text_stat_error">#7E7E7E</color>
+
+
+</resources>

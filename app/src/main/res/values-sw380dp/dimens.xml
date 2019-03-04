@@ -1,0 +1,73 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">6dp</dimen>
+    <dimen name="activity_vertical_margin">6dp</dimen>
+
+    <!--天气日历-->
+    <dimen name="weater_data_text_size">5sp</dimen>
+    <!--天气温度-->
+    <dimen name="weater_temp_text_size">25sp</dimen>
+    <dimen name="weater_stat_text_size">5sp</dimen>
+    <!--端口状态-->
+    <dimen name="port_mum">18sp</dimen>
+    <dimen name="port_txt">4sp</dimen>
+
+    <!--主界面下方尺寸-->
+    <dimen name="main_bar_height">92dp</dimen>
+    <dimen name="main_right_padding">9dp</dimen>
+
+    <!--天气界面尺寸-->
+    <dimen name="werther_margin_left">7dp</dimen>
+    <dimen name="werther_margin_top">11dp</dimen>
+
+    <dimen name="werther_drawable_Padding">2dp</dimen>
+    <dimen name="werther_drawable_left">7dp</dimen>
+
+    <dimen name="weather_status_img_wh">21dp</dimen>
+    <dimen name="weather_status_margin_Bottom">7dp</dimen>
+
+
+
+    <dimen name="dimen_1dp">0dp</dimen>
+    <dimen name="dimen_2dp">1dp</dimen>
+    <dimen name="dimen_3dp">1dp</dimen>
+    <dimen name="dimen_4dp">1dp</dimen>
+    <dimen name="dimen_5dp">2dp</dimen>
+    <dimen name="dimen_6dp">2dp</dimen>
+    <dimen name="dimen_7dp">2dp</dimen>
+    <dimen name="dimen_8dp">3dp</dimen>
+    <dimen name="dimen_9dp">3dp</dimen>
+    <dimen name="dimen_10dp">4dp</dimen>
+    <dimen name="dimen_11dp">4dp</dimen>
+    <dimen name="dimen_12dp">4dp</dimen>
+    <dimen name="dimen_13dp">5dp</dimen>
+    <dimen name="dimen_14dp">5dp</dimen>
+    <dimen name="dimen_15dp">5dp</dimen>
+    <dimen name="dimen_16dp">6dp</dimen>
+    <dimen name="dimen_17dp">6dp</dimen>
+    <dimen name="dimen_18dp">6dp</dimen>
+    <dimen name="dimen_19dp">7dp</dimen>
+    <dimen name="dimen_20dp">7dp</dimen>
+    <dimen name="dimen_21dp">7dp</dimen>
+    <dimen name="dimen_22dp">8dp</dimen>
+    <dimen name="dimen_23dp">8dp</dimen>
+    <dimen name="dimen_24dp">9dp</dimen>
+    <dimen name="dimen_25dp">9dp</dimen>
+    <dimen name="dimen_26dp">9dp</dimen>
+    <dimen name="dimen_27dp">10dp</dimen>
+    <dimen name="dimen_28dp">10dp</dimen>
+    <dimen name="dimen_29dp">10dp</dimen>
+    <dimen name="dimen_30dp">11dp</dimen>
+
+    <dimen name="dimen_44dp">16dp</dimen>
+    <dimen name="dimen_61dp">22dp</dimen>
+    <dimen name="dimen_79dp">28dp</dimen>
+    <dimen name="dimen_94dp">33dp</dimen>
+    <dimen name="dimen_100dp">36dp</dimen>
+    <dimen name="dimen_130dp">46dp</dimen>
+    <dimen name="dimen_158dp">56dp</dimen>
+
+
+
+</resources>
+

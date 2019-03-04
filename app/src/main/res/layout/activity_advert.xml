@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <!-- 广播播放图片 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoTurningTime="3000"
+            app:canLoop="true">
+        </com.bigkoo.convenientbanner.ConvenientBanner>
+
+        <FrameLayout
+            android:id="@+id/ll_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <VideoView
+                android:id="@+id/mVideoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/iv_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </ImageView>
+        </FrameLayout>
+
+    </FrameLayout>
+    <!-- 广播播放图片 -->
+
+    <!--logo-->
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/dimen_158dp"
+        android:layout_height="@dimen/dimen_44dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_13dp"
+        android:src="@mipmap/ad_logo"/>
+    <!--logo-->
+
+    <!--底部背景
+     android:background="@mipmap/ad_bottom_bg"
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bar_height"
+        android:layout_gravity="bottom"
+        android:background="@mipmap/ad_bottom_bg"
+        android:orientation="horizontal">
+
+        <include layout="@layout/item_werther"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1.2"  >
+
+        </include>
+
+        <include layout="@layout/item_prol"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5">
+
+        </include>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ad_qrcode"
+                android:id="@+id/imageView2"
+                android:layout_marginLeft="@dimen/main_right_padding"
+                android:layout_marginRight="@dimen/main_right_padding"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--底部背景-->
+
+</FrameLayout>
